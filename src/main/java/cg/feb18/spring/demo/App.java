@@ -8,7 +8,7 @@ import cg.feb18.spring.demo.model.Employee;
 
 /**
  * 
- * @Spring Demos
+ * @author Vaman Deshmukh
  *
  */
 
@@ -17,6 +17,7 @@ import cg.feb18.spring.demo.model.Employee;
 // DI = Dependency Injection 
 // Container = bean container 
 
+// XML based configuration 
 public class App {
 
 	public static void main(String[] args) {
@@ -26,9 +27,10 @@ public class App {
 		// pure Java approach
 //		Employee emp = new Employee(101, "Sonu", 50000); // 4 , 8, 8 = 20 100 2000
 
+		// spring approach
 		ApplicationContext context = new ClassPathXmlApplicationContext("SpringConfig.xml");
 
-		Employee emp = context.getBean(Employee.class);
+		Employee emp = context.getBean("employee2", Employee.class);
 
 		System.out.println(emp.toString());
 
