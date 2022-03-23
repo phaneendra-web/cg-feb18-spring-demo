@@ -25,7 +25,7 @@ public class App {
 		System.out.println("Start");
 
 		// pure Java approach
-//		Employee emp = new Employee(101, "Sonu", 50000); // 4 , 8, 8 = 20 100 2000
+       //  Employee emp = new Employee(101, "Sonu", 50000); // 4 , 8, 8 = 20 100 2000
 
 		// spring approach
 		ApplicationContext context = new ClassPathXmlApplicationContext("SpringConfig.xml");
