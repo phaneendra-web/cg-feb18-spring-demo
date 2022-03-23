@@ -3,12 +3,12 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com-cg-spring-core-demo</groupId>
-	<artifactId>com-cg-spring-core-demo</artifactId>
+	<groupId>cg-feb18-spring-demo</groupId>
+	<artifactId>cg-feb18-spring-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>com-cg-spring-core-demo</name>
+	<name>cg-feb18-spring-demo</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -33,12 +33,19 @@
 		</dependency>
 
 		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
+			<version>5.7.0</version>
 			<scope>test</scope>
 		</dependency>
 
-	</dependencies>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<version>5.7.0</version>
+			<scope>test</scope>
+		</dependency>
 
+
+	</dependencies>
 </project>
